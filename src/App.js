@@ -35,7 +35,7 @@ class App extends React.Component {
 			});
 	}
 //**********************?????????????*******************//
-	getImage = () => {
+	getImage = async () => {
         const image = document.getElementById('url').value;
 
         console.log({image});
