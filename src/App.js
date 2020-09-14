@@ -77,15 +77,16 @@ class App extends React.Component {
 
                             <Button size="xl" onClick={ this.getImage }>Загрузить</Button>
                         </FormLayout>
-
+                        console.log('до имаджа');
 						{
-						    console.log('до имаджа');
+
 							image &&
 							<Div style={{ textAlign: 'center' }}>
                                 <img src={ image } alt="remote file" />
 							</Div>
-                            console.log('после имаджа');
+
 						}
+						console.log('после имаджа');
                     </Group>
                 </Panel>
             </View>
