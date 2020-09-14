@@ -33,9 +33,9 @@ class App extends React.Component {
 				this.setState({ user });
 			});
 	}
-
+//**********************?????????????*******************//
 	getImage = async () => {
-        const image = document.getElementById('url').value;
+        const image = document.getElementById('Input_el').value;
 
         console.log({image});
 
@@ -80,13 +80,13 @@ class App extends React.Component {
 
 						{
 
-							image &&
+							!!image &&
 							<Div style={{ textAlign: 'center' }}>
                                 <img src={ image } alt="remote file" />
 							</Div>
 
 						}
-						
+
                     </Group>
                 </Panel>
             </View>
