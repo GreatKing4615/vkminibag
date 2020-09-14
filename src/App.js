@@ -77,7 +77,7 @@ class App extends React.Component {
 
                             <Button size="xl" onClick={ this.getImage }>Загрузить</Button>
                         </FormLayout>
-                        console.log('до имаджа');
+
 						{
 
 							image &&
@@ -86,7 +86,7 @@ class App extends React.Component {
 							</Div>
 
 						}
-						console.log('после имаджа');
+						
                     </Group>
                 </Panel>
             </View>
