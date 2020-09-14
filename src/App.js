@@ -25,6 +25,7 @@ class App extends React.Component {
 		this.state = {
 			user: null
 		};
+		this.image=null;
 	}
 
 	componentDidMount() {
@@ -35,7 +36,7 @@ class App extends React.Component {
 	}
 //**********************?????????????*******************//
 	getImage = async () => {
-        const image = document.getElementById('Input_el').value;
+        const image = document.getElementById('url').value;
 
         console.log({image});
 
