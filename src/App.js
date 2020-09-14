@@ -28,7 +28,7 @@ class App extends React.Component {
 
 	}
 
-	componentDidMount() {
+	componentDidUpdate() {
 		bridge.send('VKWebAppGetUserInfo', {})
 			.then((user) => {
 				this.setState({ user });
