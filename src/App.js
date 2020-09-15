@@ -36,14 +36,14 @@ class App extends React.Component {
 			});
 	}
 //**********************?????????????*******************//
-	getImage () {
+	getImage=async ()=> {
         const image = document.getElementById('url').value;
 
         console.log({image});
 
-        //if (image) {
+        if (image) {
 			this.setState({ image }, );
-		//}
+		}
         console.log('image---',image);
         console.log('setimage--', this.state.image);
 	};
@@ -79,18 +79,18 @@ class App extends React.Component {
                         <FormLayout>
                             <Input type="text" id="url" />
 
-                            <Button size="xl" onClick={()=> this.getImage() }>Загрузить</Button>
+                            <Button size="xl" onClick={this.getImage }>Загрузить</Button>
                         </FormLayout>
 
 						{
 
-
+                            !!image &&
 							<Div style={{ textAlign: 'center' }}>
                                 <img src={ image } alt="remote file" />
 							</Div>
 
 						}
-						<script>console.log("testimage-",image)</script>
+
 
                     </Group>
                 </Panel>
