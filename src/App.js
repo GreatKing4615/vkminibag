@@ -30,10 +30,10 @@ class App extends React.Component {
 	}
 
 	componentDidMount() {
-		// bridge.send('VKWebAppGetUserInfo', {})
-		// 	.then((user) => {
-		// 		this.setState({ user });
-		// 	});
+		bridge.send('VKWebAppInit', {})
+			.then((user) => {
+				this.setState({ user });
+			});
 	}
 //**********************?????????????*******************//
 	getImage=async ()=> {
