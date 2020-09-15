@@ -49,6 +49,7 @@ class App extends React.Component {
 
 	render() {
 		const { user, image } = this.state;
+        console.log(this.state);
 
 		return (
             <View activePanel="main">
