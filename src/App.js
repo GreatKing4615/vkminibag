@@ -44,10 +44,9 @@ class App extends React.Component {
 
         if (image) {
             this.setState({ image }, );
-            this.forceUpdate();
         }
         console.log('image---', image);
-        console.log('setimage--', this.state.image);
+        console.log('setimage--', this.state.props['image']);
     };
 
 	render() {
