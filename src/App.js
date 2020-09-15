@@ -17,13 +17,6 @@ import {
 
 import '@vkontakte/vkui/dist/vkui.css';
 
-helper = (state, props) => {
-            const image = document.getElementById('url').value;
-            if (image) {
-                return {image: image, };
-
-            };
-
 class App extends React.Component {
 
 	constructor(props) {
@@ -43,19 +36,17 @@ class App extends React.Component {
 			});
 	}
 //**********************?????????????*******************//
-    getImage = () => {
+    getImage = async () => {
 
-        this.setState(helper);
+        const image = document.getElementById('url').value;
 
-        // const image = document.getElementById('url').value;
+        console.log({ image });
 
-        // console.log({ image });
-
-        // if (image) {
-        //     this.setState({ image }, );
-        // }
-        // console.log('image---', image);
-        // console.log('setimage--', this.state.image);
+        if (image) {
+            this.setState({ image }, );
+        }
+        console.log('image---', image);
+        console.log('setimage--', this.state.image);
     };
 
 	render() {
