@@ -49,7 +49,7 @@ class App extends React.Component {
 
     test = () => {
 
-        const { , image } = this.state;
+        const {user , image } = this.state;
 
     };
 
