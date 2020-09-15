@@ -43,7 +43,7 @@ class App extends React.Component {
 			});
 	}
 //**********************?????????????*******************//
-    getImage = async () => {
+    getImage = () => {
 
         this.setState(helper);
 
