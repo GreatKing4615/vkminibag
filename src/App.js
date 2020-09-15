@@ -43,12 +43,8 @@ class App extends React.Component {
         console.log({ image });
 
         if (image) {
-            this.setState({ image }, );
+            await this.setState({ image }, );
         }
-    };
-
-    test = () => {
-        await this.getImage;
     };
 
 	render() {
@@ -82,7 +78,7 @@ class App extends React.Component {
                         <FormLayout>
                             <Input type="text" id="url" />
 
-                            <Button size="xl" onClick={ this.test }>Загрузить</Button>
+                            <Button size="xl" onClick={ this.getImage }>Загрузить</Button>
                         </FormLayout>
 
 						{
