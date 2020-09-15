@@ -45,7 +45,7 @@ class App extends React.Component {
 //**********************?????????????*******************//
     getImage = async (image) => {
 
-        this.setState({image});
+        this.setState(helper);
 
         // const image = document.getElementById('url').value;
 
