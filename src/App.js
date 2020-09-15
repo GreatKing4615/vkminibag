@@ -12,7 +12,8 @@ import {
     PanelHeader,
     PanelHeaderContent,
     Text,
-    View
+    View,
+    Alert
 } from '@vkontakte/vkui';
 
 import '@vkontakte/vkui/dist/vkui.css';
@@ -32,7 +33,7 @@ class App extends React.Component {
 	componentDidMount() {
 		bridge.send('VKWebAppInit', {})
 			.then((user) => {
-				this.setState({ user });
+				this.setState({ user,image },{Alert});
 			});
 	}
 //**********************?????????????*******************//
