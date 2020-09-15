@@ -36,7 +36,7 @@ class App extends React.Component {
 			});
 	}
 //**********************?????????????*******************//
-	getImage = async () => {
+	getImage () {
         const image = document.getElementById('url').value;
 
         console.log({image});
@@ -86,7 +86,7 @@ class App extends React.Component {
 
 							!!image &&
 							<Div style={{ textAlign: 'center' }}>
-                                <img src={ image } alt="remote file" />
+                                <img src={ ()=>image } alt="remote file" />
 							</Div>
 
 						}
