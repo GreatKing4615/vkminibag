@@ -24,7 +24,6 @@ class App extends React.Component {
 
 		this.state = {
 			user: null,
-            image: null
 		};
 
 	}
@@ -49,7 +48,7 @@ class App extends React.Component {
 
 	render() {
 		const { user, image } = this.state;
-        console.log(this.state);
+        console.log('state is ', this.state);
 
 		return (
             <View activePanel="main">
