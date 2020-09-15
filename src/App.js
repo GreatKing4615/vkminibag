@@ -33,7 +33,7 @@ class App extends React.Component {
 	componentDidMount() {
 		bridge.send('VKWebAppInit', {})
 			.then((user) => {
-				this.setState({ user,image },{Alert});
+				this.setState({ user,image });
 			});
 	}
 //**********************?????????????*******************//
