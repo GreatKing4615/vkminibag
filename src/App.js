@@ -24,16 +24,16 @@ class App extends React.Component {
 
 		this.state = {
 			user: null,
-            image: "https://service.pavel.im/image"
+            image: null
 		};
 
 	}
 
 	componentDidMount() {
-		bridge.send('VKWebAppGetUserInfo', {})
-			.then((user) => {
-				this.setState({ user });
-			});
+		// bridge.send('VKWebAppGetUserInfo', {})
+		// 	.then((user) => {
+		// 		this.setState({ user });
+		// 	});
 	}
 //**********************?????????????*******************//
 	getImage=async ()=> {
