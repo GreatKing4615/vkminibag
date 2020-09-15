@@ -24,7 +24,7 @@ class App extends React.Component {
 
 		this.state = {
 			user: null,
-            image: null
+            image: "https://service.pavel.im/image"
 		};
 
 	}
