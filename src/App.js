@@ -47,6 +47,10 @@ class App extends React.Component {
         }
     };
 
+    test = () => {
+        await this.getImage;
+    };
+
 	render() {
 		const { user, image } = this.state;
 
@@ -78,7 +82,7 @@ class App extends React.Component {
                         <FormLayout>
                             <Input type="text" id="url" />
 
-                            <Button size="xl" onClick={await this.getImage }>Загрузить</Button>
+                            <Button size="xl" onClick={ this.test }>Загрузить</Button>
                         </FormLayout>
 
 						{
