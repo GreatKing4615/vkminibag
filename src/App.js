@@ -17,6 +17,8 @@ import {
 
 import '@vkontakte/vkui/dist/vkui.css';
 
+var flag = 0;
+
 class App extends React.Component {
 
 	constructor(props) {
@@ -43,10 +45,10 @@ class App extends React.Component {
         console.log({ image });
 
         if (image) {
-            this.setState({ image }, );
+            this.setState({ image }, function {flag = 1;});
         }
         console.log('image---', image);
-        console.log('setimage--', this.state.props['image']);
+        console.log('flag is ', flag);
     };
 
 	render() {
